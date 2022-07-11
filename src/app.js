@@ -1,11 +1,56 @@
-let sujeto = ["The dog", "My grandma", "His turtle", "My bird"];
-let accion = ["ate", "peed", "crushed", "broke", "stole"];
-let objeto = ["my homework", "my keys", "the car", "my PC"];
+let sujeto = [
+  "The dog",
+  "My grandma",
+  "Elon Musk",
+  "Rasputin",
+  "The Peaky Blinders",
+  "Aliens",
+  "A cow",
+  "A dinosaur",
+  "An old man",
+  "John Wick",
+  "Shrek",
+  "Obama",
+  "Bin Laden",
+  "Zoboomafoo",
+  "Chewbacca",
+  "Nicolas Maduro"
+];
+let accion = [
+  "ate",
+  "peed",
+  "destroyed",
+  "stole",
+  "sold",
+  "burned",
+  "lost",
+  "buried"
+];
+let objeto = [
+  "my homework",
+  "my keys",
+  "my car",
+  "my PC",
+  "my house",
+  "my room",
+  "my notes",
+  "my ID",
+  "my driving license",
+  "my fridge",
+  "my grandpa",
+  "my money",
+  "my toilet"
+];
 let tiempo = [
   "before the class",
-  "before leaving",
-  "when I finished",
-  "during my lunch"
+  "before leaving this morning",
+  "this morning",
+  "during my lunch",
+  "while I was away",
+  "the other day",
+  "when I was asleep",
+  "during break",
+  "during vacations"
 ];
 
 var builtExcuse = [];

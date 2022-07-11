@@ -16,7 +16,6 @@ function randomNum(item) {
   builtExcuse.push(item[num]);
 }
 
-// builtExcuse = [];
 listadelistas.forEach(randomNum);
 
 let excusa = builtExcuse.join(" ");

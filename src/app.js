@@ -1,20 +1,24 @@
-let pronoun = ["the", "our"];
-let adj = ["great", "big", "only", "amazing", "lordOf", "masterOf"];
-let noun = ["jogger", "raccoon", "anime", "coffee", "cats" ];
-let tld = [".net", ".com",".gov",".me", ".dev", ".us"]
+window.addEventListener("DOMContentLoaded", () => {
 
-var construirDominio = [];
-let listadelistas = [pronoun, adj, noun, tld];
 
-function randomNum(item) {
-  let num = Math.floor(Math.random() * item.length);
-  construirDominio.push(item[num]);
-}
+  let pronoun = ["the", "our", "my"];
+  let adj = ["great", "big", "legendary", "amazing", "blue", "only", "anonimous"];
+  let noun = ["jogger", "cat", "productions", "cubes", "bird", "devs"];
 
-listadelistas.forEach(randomNum);
+  let dominio = [];
 
-let domainName = construirDominio.join(" ");
-let domainDOM = document.getElementById("domainName");
-domainDOM.innerText = domainName;
+	for (let a of pronoun) {
+		for (let b of adj) {
+			for (let c of noun) {
+				dominio.push(a + b + c + ".com");
+			}
+		}
+	}
 
-// console.log(builtExcuse.join(" "))
+  for (let item of dominio){
+    let domainList = document.getElementById("domainList");
+    let newadd = document.createElement("li");
+    newadd.innerText = item;
+    domainList.appendChild(newadd);
+    }
+});
